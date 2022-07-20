@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* styling start  */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+  margin: 0 auto;
+  width: 900px;
+  padding-top: 50px;
+}
+
+#container {
+  background-color: rgb(215, 226, 206);
+  padding: 40px;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #6a6a6a;
+  padding-bottom: 30px;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#time {
+  text-align: right;
+  font-size: 15px;
+  color: rgb(124, 155, 122);
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button {
+  background-color: #6a6a6a;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #393939;
+}
+
+#submit {
+  background-color: rgb(124, 155, 122);
+}
+#submit:hover {
+  background-color: #393939;
+}
+
+label {
+  color: #6a6a6a;
+}
+
+/* --------- style popup -------*/
+
+.popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 0;
+  background: rgb(215, 226, 206);
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup p {
+    padding-top: 16px;
+    font-size: 20px;
+  }
+@media screen and (max-width: 600px) {
+  .main {
+    width: 400px;
+  }
+  #time {
+    text-align: right;
+    font-size: 10px;
+    color: rgb(124, 155, 122);
+  }
+  label {
+    font-size: 13px;
+  }
+  .popup {
+    width: 300px;
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  .open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .popup h2 {
+    font-size: 28px;
+  }
+  .popup p {
+    padding-top: 16px;
+    font-size: 16px;
+  }
+  
+
+
+}

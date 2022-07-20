@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing | mtm6302</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="main">
+
+        <h1>JOB LISTING</h1>
+
+        <form id="container">
+
+            <div id="time"></div>
+
+            <div class="forms">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullname" required="required" />
+            </div>
+
+            <div class="forms">
+                <label for="status">Current Employment Status</label>
+                <select id="status" class="selectbox" style="width: 100%;">
+                    <option selected>Select an option</option>
+                    <option value="FullTime">Full Time</option>
+                    <option value="PartTime">Part Time</option>
+                    <option value="Unemployed">Unemployed</option>
+                </select>
+            </div>
+
+            <div class="forms">
+                <label for="textarea">What are your qualifications</label>
+                <textarea name="textarea" id="textarea" class="textarea-field"></textarea>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox">
+                <label>Accept the Terms and Conditions</label>
+            </div>
+
+            <button class="save btn btn-primary">Save</button>
+            <button id="submit" class="submit btn btn-primary" onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+                
+                <h2>Thank You!</h2>
+                <p>Your application has been submited!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
